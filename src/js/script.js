@@ -1,7 +1,26 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
-
+const iconLight = document.querySelector(".iconLight");
+const iconDark = document.querySelector(".iconDark");
+const card = document.querySelector(".card-container")
+const resume = document.querySelector("#resume")
+const cvFileName = 'Edidiong_Samuel.pdf';
 hamburger.addEventListener("click", mobileMenu);
+
+resume.addEventListener('click', ()=>{
+  // alert('jjj')
+  const cvUrl = `assets/${cvFileName}`;
+  const link = document.createElement('a');
+  link.href = cvUrl;
+  link.download = cvFileName;
+  link.style.display = 'none'; // Hide the link (optional)
+
+  // Append the link to the document body (optional)
+  // document.body.appendChild(link);  // Uncomment if needed
+
+  // Simulate a click on the link to trigger download
+  link.click();
+})
 
 function mobileMenu() {
   hamburger.classList.toggle("active");
@@ -39,9 +58,15 @@ function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark"); //add this
+    iconLight.classList.add('invisible')
+    iconDark.classList.remove('invisible')
+    // card.classList.;
+    card.classList.remove('card-bgLight');
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light"); //add this
+    iconLight.classList.remove('invisible')
+    iconDark.classList.add('invisible')
   }
 }
 
@@ -56,6 +81,12 @@ if (currentTheme) {
 
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
+    iconLight.classList.add('invisible')
+    iconDark.classList.remove('invisible')
+  } else {
+    toggleSwitch.checked = false;
+    iconLight.classList.remove('invisible')
+    iconDark.classList.add('invisible')
   }
 }
 
@@ -63,5 +94,5 @@ if (currentTheme) {
 
 let myDate = document.querySelector("#datee");
 
-const yes = new Date().getFullYear();
-myDate.innerHTML = yes;
+const yes = new Date();
+myDate.innerHTML = yes.getFullYear();

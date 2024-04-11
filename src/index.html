@@ -74,7 +74,7 @@
       sizes="512x512"
       href="assets/favicon/android-chrome-512x512.png"
     />
-    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/Icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <link
       rel="stylesheet"
@@ -92,9 +92,13 @@
         <div class="container">
           <!-- Logo -->
           <h1 id="logo">
-            <a href="https://github.com/CommunityPro/portfolio-html"
-              ><img src="./assets/logo.png" alt="Your Logo"
-            /></a>
+            <a href="#hero"
+              >
+              <img class="iconLight" style="width: 100px; position: absolute; top: 15px;" src="./assets/Icon.png" alt="Your Logo"
+              />
+              <img class="iconDark" style="width: 100px; position: absolute;  top: 15px;" src="./assets/Icon2.png" alt="Your Logo"
+            />
+          </a>
           </h1>
           <!-- Navbar links -->
           <ul class="nav-menu">
@@ -102,11 +106,9 @@
             <li><a class="nav-link" href="#">CONTACT</a></li>
             <li><a class="nav-link" href="#">BlOG</a></li>
             <li>
-              <a
+              <button id="resume"
                 class="nav-link btn btn-primary"
-                href="https://github.com/CommunityPro/portfolio-html"
-                >RESUME <i class="fas fa-arrow-right"></i
-              ></a>
+                ><p>RESUME</p> <i class="fas fa-download"></i></button>
             </li>
 
             <!-- Toggle switch -->
@@ -143,14 +145,52 @@
             From frontend to backend to server and then to blockchain, I craft exceptional websites and write clean and resuble backend logics.
           </p>
         </div>
-        <a
+        <a 
+          style="display: flex; gap: 0.5rem;"
           href="https://www.linkedin.com/in/edidiong-samuel-ng"
           class="btn btn-secondary"
           target="_blank"
-          >Connect With Me</a
+          ><p style="font-weight: bold;">Connect With Me</p>  <i style="padding-top: 3px;" class="fas fa-paper-plane"></i></a
         >
       </section>
     </header>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>About me</h2>
+        <p>My introduction</p>
+      </div>
+      <article id="about">
+        <div class="side" id="sidePic">
+          <img src="../src/assets/profile.jpg" id="aboutPic" alt="">
+        </div>
+        <div class="side">
+          <p>
+            My name is Edidiong Emmanuel Samuel. I'm a passionate full-stack developer with a knack for crafting exceptional web experiences.  I leverage the power of frameworks like Vue.js, React.js, Next.js, and Nuxt.js to deliver smooth user interfaces, while on the backend I ensure robust functionality with Laravel (PHP).  For blockchain enthusiasts, I bring Solidity development to the table.  My skillset extends beyond the code,  I leverage tools like cPanel and AWS to architect secure and scalable server infrastructure, while also streamlining workflows through DevOps practices.  In short, I'm your one-stop shop for bringing your web ideas to life, efficiently and securely.
+          </p>
+          <div class="writeup-card" >
+            <div>
+              <h1 style="font-size: 2rem; text-align:center;">2+</h1>
+              <p class="writeup">Years of experience</p>
+            </div>
+            <div>
+              <h1 style="font-size: 2rem; text-align:center;">10+</h1>
+              <p class="writeup">Completed projects</p>
+            </div>
+            <div>
+              <h1 style="font-size: 2rem; text-align:center;">5+</h1>
+              <p class="writeup">Companies</p>
+            </div>
+          </div>
+          <button id="resume"
+          class="nav-link btn btn-primary"
+          >Download cv <i class="fas fa-download"></i></button>
+
+        </div>
+      </article>
+    </section>
 
     <!-- Projects -->
     <section id="projects" class="project-container container">
@@ -162,82 +202,93 @@
 
       <article class="project">
         <!-- Project 1 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Project One</h3>
-              <p>React, Redux, SASS</p>
+        <div href="" class="card-container">
+          <div href=""  class="card">
+            <div class="project-info">
+              <div class="project-bio">
+                <h3>Fabricspa</h3>
+                <p>Vuejs, Tailwind, Laravel(php)</p>
             </div>
-
+            
             <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+              <a href="https://fabricspa.com.ng" target="_blank"><i class="fas fa-globe"></i></a>
             </div>
           </div>
         </div>
-
-        <!-- Project 2 -->
-        <div href="" class="card">
+      </div>
+      
+      <!-- Project 2 -->
+      <div href="" class="card-container">
+        <div href="" id="cardPic" class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3>Project Two</h3>
-              <p>React, Redux, SASS</p>
+              <h3>Dalensai</h3>
+              <p>VueJS, Tailwind</p>
             </div>
 
             <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+              <a href="https://dalensai.com" target="_blank"><i class="fas fa-globe"></i></a>
             </div>
           </div>
         </div>
-
-        <!-- Porject 3 -->
-        <div href="" class="card">
+      </div >
+      
+      <!-- Porject 3 -->
+      <div href="" class="card-container">
+        <div href="" id="cardPic2" class="card">
           <div class="project-info">
             <div class="project-bio">
-              <h3>Project Three</h3>
-              <p>React, Redux, SASS</p>
+              <h3>Acncoin</h3>
+              <p>VueJs, Tailwind, Solidity(in view)</p>
+            </div>
+            
+            <div class="project-link">
+              <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+              <a href="https://acncoin.io" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 4 -->
+      <div href="" class="card-container">
+      <div href="" id="cardPic3" class="card">
+        <div class="project-info">
+          <div class="project-bio">
+            <h3>OfficePro</h3>
+            <p>Laravel(php), MySQL</p>
+          </div>
+
+          <div class="project-link">
+            <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+            <a href="https://www.officepro247.com/" target="_blank"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!-- Project 5 -->
+        <div href="" class="card-container">
+        <div href="" id="cardPic4" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Kflix</h3>
+              <p>Html, CSS, Javascript</p>
             </div>
 
             <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+              <!-- <a href="#" target="_blank"><i class="fab fa-github"></i></a> -->
+              <a href="https://kflix.netlify.app/home" target="_blank"><i class="fas fa-globe"></i></a>
             </div>
           </div>
         </div>
-
-        <!-- Project 4 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Project Four</h3>
-              <p>React, Redux, SASS</p>
-            </div>
-
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-          </div>
         </div>
 
-        <!-- Project 5 -->
-        <div href="" class="card">
-          <div class="project-info">
-            <div class="project-bio">
-              <h3>Project Five</h3>
-              <p>React, Redux, SASS</p>
-            </div>
-
-            <div class="project-link">
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
-            </div>
-          </div>
-        </div>
 
         <!-- Project 6 -->
-        <div href="" class="card">
+        <!-- <div href="" class="card">
           <div class="project-info">
             <div class="project-bio">
               <h3>Project Six</h3>
@@ -249,46 +300,32 @@
               <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
             </div>
           </div>
-        </div>
+        </div> -->
       </article>
 
-      <a href="#" class="btn btn-secondary"
+      <!-- <a href="#" class="btn btn-secondary"
         target="_blank" >See More <i class="fas fa-arrow-right"></i
-      ></a>
+      ></a> -->
     </section>
 
     <footer id="footer">
       <div class="container">
-        <a href="mailto:communitypro47@gmail.com">communitypro47@gmail.com</a>
+        <a href="mailto:edidiongsamuel14@gmail.com">edidiongsamuel14@gmail.com</a>
         <!-- Social links -->
         <div class="social">
-          <a href="#" target="_blank"
+          <a href="https://web.facebook.com/DaCodes.ng/" target="_blank"
             ><img src="./assets/facebook-icon.svg" alt="Facebook"
           /></a>
           <a href="#" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
-          <a href="#" target="_blank"
+          <a href="https://www.linkedin.com/in/edidiong-samuel-ng" target="_blank"
             ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
           /></a>
-          <a href="#" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
-          <a href="#" target="_blank"
+          <a href="https://github.com/Dakeem05" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <!-- <a href="#" target="_blank"
             ><img src="./assets/hashnode-icon.svg" alt="Hashnode"
-          /></a>
+          /></a> -->
         </div>
-        <!-- Attribution -->
-        <div class="attribution">
-          <a
-            href="https://github.com/CommunityPro/portfolio-html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="https://user-images.githubusercontent.com/62628408/157202263-9174da24-b19a-4017-9b7c-a1d26ae8f014.svg"
-              alt="attribution"
-              width="150px"
-            />
-          </a>
-        </div>
-        <p>Copyright &copy; Communitypro <span id="datee"></span>, All rights reserved</p>
+        <p>Copyright &copy; Edidiong Samuel <span id="datee"></span>, All rights reserved</p>
       </div>
     </footer>
     <script src="js/script.js"></script>
