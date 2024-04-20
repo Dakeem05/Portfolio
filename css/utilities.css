@@ -172,6 +172,10 @@ h2::selection {
   background: url(../assets/project/kflix.png) center center/contain;
   background-repeat: no-repeat;
 }
+#cardPic5 {
+  background: url(../assets/project/compad.png) center center/contain;
+  background-repeat: no-repeat;
+}
 
 
 

@@ -5,6 +5,14 @@ const iconDark = document.querySelector(".iconDark");
 const card = document.querySelector(".card-container")
 const resume = document.querySelector("#resume")
 const cvFileName = 'Edidiong_Samuel.pdf';
+
+const progressBars = document.querySelectorAll('.progress');
+
+progressBars.forEach(progressBar => {
+  const progressValue = progressBar.dataset.progress;
+  progressBar.style.width = `${progressValue}%`;
+});
+
 hamburger.addEventListener("click", mobileMenu);
 
 resume.addEventListener('click', ()=>{
