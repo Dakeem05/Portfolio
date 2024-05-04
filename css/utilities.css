@@ -160,6 +160,14 @@ h2::selection {
   background: url(../assets/project/dalensai.png) center center/contain;
   background-repeat: no-repeat;
 }
+#cardPic_0 {
+  background: url(../assets/project/Webtusk.png) center center/contain;
+  background-repeat: no-repeat;
+}
+#cardPic_1 {
+  background: url(../assets/project/Webtusk_frontend2.png) center center/contain;
+  background-repeat: no-repeat;
+}
 #cardPic2 {
   background: url(../assets/project/acncoin.png) center center/contain;
   background-repeat: no-repeat;
