@@ -208,6 +208,30 @@ h2::selection {
   background: url(../assets/project/Quests\ _\ Decoding\ The\ Future.png) center center/contain;
   background-repeat: no-repeat;
 }
+#cardPic12 {
+  background: url(../assets/project/Vestpad.png) center center/contain;
+  background-repeat: no-repeat;
+}
+#cardPic13 {
+  background: url(../assets/project/swap2naira.png) center center/contain;
+  background-repeat: no-repeat;
+}
+#cardPic14 {
+  background: url(../assets/project/foodpreneurshub.png) center center/contain;
+  background-repeat: no-repeat;
+}
+#cardPic15 {
+  background: url(../assets/project/bloctizen.png) center center/contain;
+  background-repeat: no-repeat;
+}
+#cardPic16 {
+  background: url(../assets/project/zend.png) center center/contain;
+  background-repeat: no-repeat;
+}
+#cardPic17 {
+  background: url(../assets/project/blochealth.png) center center/contain;
+  background-repeat: no-repeat;
+}
 
 
 
