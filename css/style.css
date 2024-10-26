@@ -438,3 +438,111 @@ body {
     width: 80%;
   }
 }
+
+
+/* Skills Section Styles */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.skills-category {
+  background: var(--card-background, #fff);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.skills-category h3 {
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.skill-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-bar {
+  position: relative;
+}
+
+.skill-bar p {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.progress-wrapper {
+  position: relative;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--primary-color);
+  border-radius: 15px;
+  transition: width 1s ease-in-out;
+}
+
+/* Liquid wave effect */
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  animation: wave 2s linear infinite;
+  transform: translateX(-100%);
+}
+
+.progress-text {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-color);
+  font-size: 0.875rem;
+  z-index: 1;
+}
+
+/* Dark mode adjustments */
+[data-theme="dark"] .skills-category {
+  background: var(--card-background-dark, #2a2a2a);
+}
+
+[data-theme="dark"] .progress-bar {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+

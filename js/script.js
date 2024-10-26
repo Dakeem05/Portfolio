@@ -104,3 +104,12 @@ let myDate = document.querySelector("#datee");
 
 const yes = new Date();
 myDate.innerHTML = yes.getFullYear();
+
+/* Add this to your JavaScript to set progress values */
+document.addEventListener('DOMContentLoaded', function() {
+  const progressBars = document.querySelectorAll('.progress-fill');
+  progressBars.forEach(bar => {
+    const progress = bar.getAttribute('data-progress');
+    bar.style.width = `${progress}%`;
+  });
+});
