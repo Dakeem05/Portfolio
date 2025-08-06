@@ -151,61 +151,16 @@ h2::selection {
 
 /* project 1 */
 .card:nth-child(1) {
-  background: url(../assets/project/fabricspa.png) center center/contain;
+  background: url(../assets/project/TransactX.png) center center/contain;
   background-repeat: no-repeat;
-  
 }
 
-#cardPic {
-  background: url(../assets/project/dalensai.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic_0 {
-  background: url(../assets/project/Webtusk.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic_1 {
-  background: url(../assets/project/Webtusk_frontend2.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic2 {
-  background: url(../assets/project/acncoin.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic3 {
-  background: url(../assets/project/officepro.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic4 {
-  background: url(../assets/project/kflix.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic5 {
-  background: url(../assets/project/compad.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic6 {
-  background: url(../assets/project/Denota.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic7 {
-  background: url(../assets/project/Compad\ \(2\).png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic8 {
-  background: url(../assets/project/Registration\ _\ Decoding\ The\ Future.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic9 {
-  background: url(../assets/project/Okemiri\ \(2\).png) center center/contain;
+#cardPic16 {
+  background: url(../assets/project/Tekinni.png) center center/contain;
   background-repeat: no-repeat;
 }
 #cardPic10 {
   background: url(../assets/project/Home\ -\ Vistapay.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic11 {
-  background: url(../assets/project/Quests\ _\ Decoding\ The\ Future.png) center center/contain;
   background-repeat: no-repeat;
 }
 #cardPic12 {
@@ -220,19 +175,6 @@ h2::selection {
   background: url(../assets/project/foodpreneurshub.png) center center/contain;
   background-repeat: no-repeat;
 }
-#cardPic15 {
-  background: url(../assets/project/bloctizen.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic16 {
-  background: url(../assets/project/zend.png) center center/contain;
-  background-repeat: no-repeat;
-}
-#cardPic17 {
-  background: url(../assets/project/blochealth.png) center center/contain;
-  background-repeat: no-repeat;
-}
-
 
 
 /* Media Queries */
